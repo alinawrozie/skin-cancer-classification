@@ -28,11 +28,20 @@ The project evaluates and compares four different deep learning architectures on
 ---
 
 ## 📈 Evaluation Metrics & Performance
-Models are evaluated using 5-Fold Cross-Validation across multiple metrics:
-* Binary Accuracy
-* Precision & Recall
-* F1-Score
-* ROC AUC & Precision-Recall AUC (PRC)
+Models are evaluated using 5-Fold Cross-Validation across multiple metrics including Accuracy, Precision, Recall, F1-Score, and ROC-AUC.
+
+### 📊 Performance Comparison Table (Task 1: Melanoma vs. Keratosis & Nevus)
+
+| Model Architecture | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Custom CNN** | 0.806 | 0.815 | 0.800 | 0.807 | - |
+| **VGG16 (Pre-trained)** | 0.843 | 0.873 | 0.843 | 0.831 | 0.757 |
+| **EfficientNetV2-B1** | 0.812 | 0.820 | 0.810 | 0.815 | 0.742 |
+| **Vision Transformer (ViT-B16)** | 0.690 | 0.898 | 0.693 | 0.782 | **0.780** |
+
+<p align="center">
+  <img src="assets/roc_curves.png" alt="ROC Curves Comparison" width="600">
+</p>
 
 ---
 
