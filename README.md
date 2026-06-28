@@ -53,6 +53,10 @@ Models are evaluated using 5-Fold Cross-Validation across multiple metrics inclu
 | **EfficientNetV2-B1 (Stratified KFold)** | 0.684 | 0.601 | 0.688 | 0.579 | 0.735 |
 | **Vision Transformer (ViT-B16)** | 0.775 | **0.757** | **0.875** | **0.764** | **0.844** |
 
+<p align="center">
+  <img src="assets/roc_curves_task2.png" alt="ROC Curves Comparison Task 2" width="600">
+</p>
+
 ---
 
 ## 🛠️ Installation & Setup
