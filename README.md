@@ -8,12 +8,13 @@ The classification is split into two primary tasks using the ISIC skin lesion da
 
 ---
 
-## 🚀 Key Features & Fixes in this Fork (`main` branch)
-This branch is a refined, showcase-ready version of the original dissertation code. It has been modified to run out-of-the-box in a local environment:
-- **Local Paths**: Removed Google Colab hardcoded paths (e.g. `/content/drive/...`) and replaced them with standard local relative paths for data and model weights.
-- **Robust TFRecord Writing**: Fixed directory creation bugs in the preprocessing scripts to automatically construct output folders.
-- **Resolved Compilation Bugs**: Added missing evaluation metrics (`auc` and `prc`) to model compiles to prevent runtime KeyErrors.
-- **Corrected Matplotlib Visualizations**: Fixed out-of-bounds indexing bugs and binary label representation loops when plotting classified/misclassified predictions.
+## 🚀 Key Features of the Project
+This repository is a showcase-ready, refined implementation of deep learning architectures for skin cancer classification:
+- **End-to-End ML Pipeline**: Preprocessing raw images, applying advanced augmentations, and serializing them into high-performance TFRecord datasets.
+- **Multi-Model Comparison**: Evaluates and compares Custom CNN baseline, pre-trained VGG16, EfficientNetV2-B1, and Vision Transformer (ViT-B16).
+- **5-Fold Cross-Validation**: Implements rigorous cross-validation to evaluate model performance across multiple metrics.
+- **Modularized Codebase**: Organizes core preprocessing pipelines and Keras model definitions into a reusable `src/` library.
+- **Rich Evaluations**: Incorporates multiple metrics tracking (Accuracy, Precision, Recall, F1, ROC-AUC) and visualizes predictions directly.
 
 ---
 
