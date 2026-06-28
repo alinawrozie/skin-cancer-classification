@@ -31,18 +31,27 @@ The project evaluates and compares four different deep learning architectures on
 ## 📈 Evaluation Metrics & Performance
 Models are evaluated using 5-Fold Cross-Validation across multiple metrics including Accuracy, Precision, Recall, F1-Score, and ROC-AUC.
 
-### 📊 Performance Comparison Table (Task 1: Melanoma vs. Keratosis & Nevus)
+### 📊 Performance Comparison Table (Task 1: Melanoma vs. Seborrheic Keratosis & Nevus)
 
-| Model Architecture | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+| Model Architecture | Accuracy | Precision (Macro) | Recall (Macro) | F1-Score (Macro) | ROC-AUC |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Custom CNN** | 0.806 | 0.815 | 0.800 | 0.807 | - |
-| **VGG16 (Pre-trained)** | 0.843 | 0.873 | 0.843 | 0.831 | 0.757 |
-| **EfficientNetV2-B1** | 0.812 | 0.820 | 0.810 | 0.815 | 0.742 |
-| **Vision Transformer (ViT-B16)** | 0.690 | 0.898 | 0.693 | 0.782 | **0.780** |
+| **Custom CNN (with Dropout)** | **0.803** | 0.618 | 0.508 | 0.469 | 0.608 |
+| **VGG16 (Stratified KFold)** | 0.694 | 0.542 | 0.540 | 0.528 | 0.572 |
+| **EfficientNetV2-B1 (Stratified KFold)** | 0.604 | 0.567 | 0.636 | 0.557 | 0.659 |
+| **Vision Transformer (ViT-B16)** | 0.697 | **0.703** | **0.794** | **0.686** | **0.769** |
 
 <p align="center">
   <img src="assets/roc_curves.png" alt="ROC Curves Comparison" width="600">
 </p>
+
+### 📊 Performance Comparison Table (Task 2: Seborrheic Keratosis vs. Melanoma & Nevus)
+
+| Model Architecture | Accuracy | Precision (Macro) | Recall (Macro) | F1-Score (Macro) | ROC-AUC |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Custom CNN (with Dropout)** | **0.861** | 0.733 | 0.616 | 0.644 | 0.776 |
+| **VGG16 (Pre-trained)** | 0.625 | 0.594 | 0.683 | 0.555 | 0.742 |
+| **EfficientNetV2-B1 (Stratified KFold)** | 0.684 | 0.601 | 0.688 | 0.579 | 0.735 |
+| **Vision Transformer (ViT-B16)** | 0.775 | **0.757** | **0.875** | **0.764** | **0.844** |
 
 ---
 
