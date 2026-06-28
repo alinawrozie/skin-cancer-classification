@@ -1,0 +1,25 @@
+# Model weights
+*.h5
+*.hdf5
+*.zip
+*.tar.gz
+*.rar
+
+# TFRecords / Dataset files (if copied locally)
+*.tfrec
+dataset/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*/*/.ipynb_checkpoints/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS metadata
+.DS_Store
+Thumbs.db
