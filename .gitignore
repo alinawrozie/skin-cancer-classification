@@ -26,3 +26,6 @@ Thumbs.db
 
 # Notes 
 *.pdf
+
+# Agent skills & customisations (machine-local, may contain sensitive config)
+.agents/
